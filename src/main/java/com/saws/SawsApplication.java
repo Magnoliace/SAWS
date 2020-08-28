@@ -5,8 +5,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
-@MapperScan("com.saws.dao")
-@SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
+@MapperScan("com.saws.entity.mapper")
+@SpringBootApplication
 public class SawsApplication {
     public static void main(String[] args) {
         SpringApplication.run(SawsApplication.class, args);
