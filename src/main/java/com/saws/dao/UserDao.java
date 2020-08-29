@@ -17,4 +17,8 @@ public class UserDao {
         return false;
     }
 
+    public boolean authenticate(String id, String pw){
+        return userMapper.getPassword(id).equals(pw);
+    }
+
 }

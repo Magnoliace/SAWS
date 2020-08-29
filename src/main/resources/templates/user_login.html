@@ -15,7 +15,7 @@
 		    height: 100%;   
 		    font-family: 'Open Sans',sans-serif;   
 		    margin: 0;   
-		    background:url(pic/ad3.jpg)  repeat left top;
+		    background:url(http://localhost:8080/img/ad3.jpg)  repeat left top;
 			background-size: cover;
 		}   
 		#login{   
@@ -130,10 +130,9 @@
 	<div id="change">
 			<button id="login_btn" type="button" style="cursor: pointer;" onclick="change()">Administrator login</button>
 		</div>
-		 <div id="login">  
-		        <h1>User Login</h1>  
-		        <form method="post" >  
-		
+		 <div id="login">
+		        <h1>User Login</h1>
+		        <form method="post" action="/authenticate">
 		            <input type="text" id="adminName" placeholder="Account" name="name" required="required" oninvalid="setCustomValidity('it can not be empty')" oninput="setCustomValidity('')"></input>  
 		            <input type="password"  placeholder="Password" name="pw" required="required" oninvalid="setCustomValidity('it can not be empty')" oninput="setCustomValidity('')"></input>   
 					<button class="but" type="submit" name="submit" onclick="checkAdmin()">Sign-In</button>  

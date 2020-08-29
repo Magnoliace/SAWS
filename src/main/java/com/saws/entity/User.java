@@ -6,7 +6,7 @@ public class User {
     private String user_id;
     private String user_password;
     private String usr_name;
-    private int user_phone;
+    private Long user_phone;
     private String user_address;
     private int user_age;
     private String user_gender;
@@ -38,11 +38,11 @@ public class User {
         this.usr_name = usr_name;
     }
 
-    public int getUser_phone() {
+    public long getUser_phone() {
         return user_phone;
     }
 
-    public void setUser_phone(int user_phone) {
+    public void setUser_phone(long user_phone) {
         this.user_phone = user_phone;
     }
 

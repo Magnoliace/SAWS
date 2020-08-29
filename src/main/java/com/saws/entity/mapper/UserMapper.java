@@ -16,5 +16,8 @@ public interface UserMapper {
 
     @Select(" select * from user")
     public List<User>  List();
+
+    @Select("select user_password form user where user_id = #{user_id}")
+    String getPassword(String id);
 }
 

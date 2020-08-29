@@ -30,7 +30,8 @@ public class Register {
         user.setUser_id(httpServletRequest.getParameter("user_id"));
         user.setUser_password(httpServletRequest.getParameter("user_pw"));
         user.setUsr_name(httpServletRequest.getParameter("user_name"));
-        user.setUser_phone(Integer.parseInt(httpServletRequest.getParameter("user_phone")));
+        System.out.println(httpServletRequest.getParameter("user_phone"));
+        user.setUser_phone(Long.parseLong(httpServletRequest.getParameter("user_phone")));
         user.setUser_address(httpServletRequest.getParameter("user_address"));
         user.setUser_age(Integer.parseInt(httpServletRequest.getParameter("user_age")));
         user.setUser_gender(httpServletRequest.getParameter("user_sex"));
@@ -46,4 +47,3 @@ public class Register {
         return "register";
     }
 }
-
